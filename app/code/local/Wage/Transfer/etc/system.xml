@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>   
+    <tabs>
+        <wage translate="label" module="transfer">
+            <label>Wagento</label>
+            <sort_order>50</sort_order>
+        </wage>
+    </tabs>
+    <sections>
+        <transfer translate="label" module="transfer">
+            <label>Transfer Content Integration</label>
+            <sort_order>10</sort_order>
+            <tab>wage</tab>
+            <show_in_default>1</show_in_default>se
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="transfer">
+                    <label>Settings</label>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sethost translate="label" module="transfer">
+                            <label>REST API Source Host</label>
+                            <comment>needs to begin with http:// or https://</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sethost>
+                        <gethost translate="label" module="transfer">
+                            <label>REST API Destination Host</label>
+                            <comment>needs to begin with http:// or https://</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </gethost>
+                        <consumerKey translate="label" module="transfer">
+                            <label>Consumer Key</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>05</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </consumerKey>
+                        <consumerSecret translate="label" module="transfer">
+                            <label>Consumer Secret</label>
+                            <comment></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </consumerSecret>
+                    </fields>
+                </general>                
+            </groups>
+        </transfer>
+    </sections>
+</config>
