@@ -14,19 +14,24 @@
                 <sort_order>10</sort_order>
                 <privileges>
                     <admin>
+                        <create>1</create> 
                         <retrieve>1</retrieve>
                     </admin>
                 </privileges>
                 <attributes module="api2">
+                    <items>Items</items>    
                     <block_id>Block Id</block_id>
+                    <store_ids>Store Ids</store_ids>
                     <title>Title</title>
                     <identifier>Identifier</identifier>
+                    <creation_time>Creation Time</creation_time>
+                    <update_time>Update Time</update_time>
                     <content>Content</content>
                     <is_active>Is Active</is_active>
                 </attributes>
                 <routes>
                     <route_cblocks>
-                        <route>/cblocks</route>
+                        <route>/cblocks/</route>
                         <action_type>collection</action_type>
                     </route_cblocks>
                 </routes>
@@ -39,11 +44,14 @@
                 <sort_order>10</sort_order>
                 <privileges>
                     <admin>
+                        <create>1</create> 
                         <retrieve>1</retrieve>
                     </admin>
                 </privileges>
                 <attributes module="api2">
+                    <items>Items</items>  
                     <page_id>page_id</page_id>
+                    <store_ids>Store Ids</store_ids>
                     <title>Title</title>
                     <root_template>Root Template</root_template>
                     <meta_keywords>Meta Keywords</meta_keywords>
@@ -62,7 +70,7 @@
                 </attributes>
                 <routes>
                     <route_cpages>
-                        <route>/cpages</route>
+                        <route>/cpages/</route>
                         <action_type>collection</action_type>
                     </route_cpages>
                 </routes>
